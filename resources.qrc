@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/Main.qml</file>
+        <file>qml/pages/SplashPage.qml</file>
+        <file>qml/pages/HomePage.qml</file>
+        <file>qml/views/StorageListingView.qml</file>
+        <file>img/icons/alert.svg</file>
+        <file>img/icons/refresh.svg</file>
+        <file>qml/delegates/StorageDeviceDelegate.qml</file>
+        <file>img/app/icon_launcher.svg</file>
+        <file>img/app/logo.svg</file>
+        <file>img/app/logo_foreground.svg</file>
+        <file>img/icons/alert-octagram.svg</file>
+        <file>img/icons/cellphone-android.svg</file>
+        <file>img/icons/harddisk.svg</file>
+        <file>img/icons/lock.svg</file>
+        <file>img/icons/micro-sd.svg</file>
+        <file>img/icons/usb.svg</file>
+    </qresource>
+</RCC>
