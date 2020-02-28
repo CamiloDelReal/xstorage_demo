@@ -1,19 +1,23 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.12
-import QtQuick.Controls.impl 2.12
-import QtQuick.Controls.Material 2.12
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtQuick.Controls.impl 2.14
+import QtQuick.Controls.Material 2.14
 import QtQuick.Layouts 1.14
 
 import XApps.XMaterialControls 1.0
 
 import "qrc:/qml"
 
-ItemDelegate {
+XItemDelegate {
     id: control
     padding: 7
     leftPadding: 12
     rightPadding: 12
     width: storageListView.width
+
+    onClicked: {
+        homeNavController.gotoView(homeNavController.storageDetailsViewIndex, index)
+    }
 
     contentItem: RowLayout {
         height: implicitHeight

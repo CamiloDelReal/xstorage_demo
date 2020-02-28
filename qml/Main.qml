@@ -1,7 +1,7 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.12
-import QtQuick.Controls.Material 2.12
-import QtQuick.Layouts 1.12
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtQuick.Controls.Material 2.14
+import QtQuick.Layouts 1.14
 
 import "qrc:/qml"
 import "qrc:/qml/pages"
@@ -11,7 +11,7 @@ XApplication {
     visible: true
     width: 420
     height: 600
-    title: qsTr("XOrm Demo One")
+    title: qsTr("XStorage Demo")
 
     Material.theme: ApplicationSettingsObj.theme
     Material.primary: ApplicationSettingsObj.primaryColor

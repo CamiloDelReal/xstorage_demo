@@ -16,5 +16,7 @@
         <file>img/icons/lock.svg</file>
         <file>img/icons/micro-sd.svg</file>
         <file>img/icons/usb.svg</file>
+        <file>qml/views/StorageDetailsView.qml</file>
+        <file>img/icons/arrow-left.svg</file>
     </qresource>
 </RCC>

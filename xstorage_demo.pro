@@ -45,7 +45,8 @@ DISTFILES +=  \
     $$PWD/img/app/logo.svg \
     $$PWD/img/app/logo_foreground.svg \
     $$PWD/img/icons/refresh.svg \
-    $$PWD/img/icons/alert.svg
+    $$PWD/img/icons/alert.svg \
+    qml/views/StorageDetailsView.qml
 
 
 #************  QML Files  *************************************************************************
@@ -54,6 +55,7 @@ DISTFILES += \
     $$PWD/qml/delegates/StorageDeviceDelegate.qml \
     $$PWD/qml/pages/SplashPage.qml \
     $$PWD/qml/pages/HomePage.qml \
+    $$PWD/qml/views/StorageDetailsView.qml \
     $$PWD/qml/views/StorageListingView.qml
 
 

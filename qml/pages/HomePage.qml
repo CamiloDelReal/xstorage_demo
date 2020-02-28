@@ -1,7 +1,7 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.12
-import QtQuick.Controls.Material 2.12
-import QtQuick.Layouts 1.12
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtQuick.Controls.Material 2.14
+import QtQuick.Layouts 1.14
 
 import "qrc:/qml"
 import "qrc:/qml/views"
@@ -17,7 +17,7 @@ XTitledPage {
 
     XAction {
         id: primaryAction
-        text: qsTr("Open global drawer")
+        text: qsTr("Back")
         icon.source: "qrc:/img/icons/arrow-left.svg"
         onTriggered: homePage.back()
     }
@@ -35,5 +35,10 @@ XTitledPage {
         anchors.fill: parent
 
         initialView: StorageListingView {}
+
+        property int storageDetailsViewIndex: 0
+        viewNavigationModel: [
+            { view: "views/StorageDetailsView.qml",  stacked: true }
+        ]
     }
 }
