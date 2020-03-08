@@ -58,7 +58,8 @@ XItemDelegate {
 
                 XCaptionLabel {
                     id: lblPercentStr
-                    text: usedPercent + "%"
+                    text: usedPercentStr
+                    visible: totalSize > 0
                     color: control.Material.secondaryTextColor
                     anchors.bottom: parent.bottom
                     anchors.right: parent.right
@@ -78,7 +79,9 @@ XItemDelegate {
 
             XCaptionLabel {
                 id: lblSizes
-                text: freeSizeStr + qsTr("  free of  ") + totalSizeStr
+                text: totalSize > 0
+                      ? freeSizeStr + qsTr("  free of  ") + totalSizeStr
+                      : qsTr("Not available")
                 color: control.Material.secondaryTextColor
                 Layout.fillWidth: true
                 horizontalAlignment: Label.AlignLeft
