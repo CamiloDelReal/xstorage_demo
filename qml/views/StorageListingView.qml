@@ -1,8 +1,8 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Controls.impl 2.14
-import QtQuick.Controls.Material 2.14
-import QtQuick.Layouts 1.14
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Controls.impl
+import QtQuick.Controls.Material
+import QtQuick.Layouts
 
 import "qrc:/qml"
 import "qrc:/qml/delegates"
@@ -13,12 +13,12 @@ XPane {
     title: qsTr("Storages Devices")
 
     property var iconType: {
-        "Unknown": "qrc:/img/icons/alert-octagram.svg",
-        "Root": "qrc:/img/icons/lock.svg",
-        "Internal": "qrc:/img/icons/cellphone-android.svg",
-        "SdCard": "qrc:/img/icons/micro-sd.svg",
-        "Usb": "qrc:/img/icons/usb.svg",
-        "Hdd": "qrc:/img/icons/harddisk.svg"
+        0: "qrc:/img/icons/alert-octagram.svg",             // UNKNOWN
+        1: "qrc:/img/icons/lock.svg",                       // ROOT
+        2: "qrc:/img/icons/cellphone-android.svg",          // INTERNAL
+        3: "qrc:/img/icons/micro-sd.svg",                   // SDCARD
+        4: "qrc:/img/icons/usb.svg",                        // USB
+        5: "qrc:/img/icons/harddisk.svg"                    // HDD
     }
 
     ListView {

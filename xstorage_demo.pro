@@ -9,10 +9,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 #************  X Modules  *************************************************************************
-include($$PWD/../../libraries/x_material_controls/x_material_controls.pri)
-include($$PWD/../../libraries/x_storage/x_storage.pri)
-include($$PWD/../../libraries/x_utils/x_utils.pri)
-include($$PWD/../../libraries/x_worker/x_worker.pri)
+include($$PWD/../x_material_controls/x_material_controls.pri)
+include($$PWD/../x_storage/x_storage.pri)
+include($$PWD/../x_utils/x_utils.pri)
+include($$PWD/../x_worker/x_worker.pri)
 
 
 #************  QML Configurations  ****************************************************************
@@ -61,7 +61,6 @@ DISTFILES += \
 
 ##************  Android Configurations  ************************************************************
 android {
-    QT += androidextras
     DISTFILES += \
         $$PWD/android/AndroidManifest.xml \
         $$PWD/android/gradle/wrapper/gradle-wrapper.jar \

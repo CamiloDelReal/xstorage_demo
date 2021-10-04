@@ -1,7 +1,7 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Controls.Material 2.14
-import QtQuick.Layouts 1.14
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Controls.Material
+import QtQuick.Layouts
 
 import "qrc:/qml"
 
@@ -12,12 +12,12 @@ XScrollView {
     ScrollIndicator.vertical: ScrollIndicator {}
 
     property var storageLabelType: {
-        0: qsTr("Unkwon"),          //UNKNOWN
-        1: qsTr("Root"),            //ROOT
-        2: qsTr("Internal Memory"), //INTERNAL
-        3: qsTr("SD Card"),         //SDCARD
-        4: qsTr("USB Device"),      //USB
-        5: qsTr("Hard Disk")        //HDD
+        0: qsTr("Unkwon"),          // UNKNOWN
+        1: qsTr("Root"),            // ROOT
+        2: qsTr("Internal Memory"), // INTERNAL
+        3: qsTr("SD Card"),         // SDCARD
+        4: qsTr("USB Device"),      // USB
+        5: qsTr("Hard Disk")        // HDD
     }
 
     property var modelData: StorageManagerObj.model.itemAt(sharedData)
