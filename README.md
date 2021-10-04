@@ -8,5 +8,5 @@ The library is [here](https://github.com/CamiloDelReal/x_storage)
 
 ### Screenshots
 <p float="left">
-<img src="https://github.com/CamiloDelReal/xstorage_demo/blob/develop/screenshots/sshot-1.png" width="80%" height="80%" />
+<img src="https://github.com/CamiloDelReal/xstorage_demo/blob/develop/screenshots/sshot-1.png" width="50%" height="50%" />
 </p>
